@@ -1,0 +1,200 @@
+html{
+    font-size: 100%;
+}
+
+
+/*the general headings*/
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align:center;
+    font-size: 2.2em;
+    color: #FFFFFF;
+    background-color: #000000;
+    margin-top:.2em;
+    margin-bottom:1em;
+    padding:1em;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    font-size: 1.1em;
+    margin-right: .3em;
+    margin-left: .3em;
+    margin-bottom:3em;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  font-size: .9em;
+  margin-right: .3em;
+  margin-left: .3em;
+}
+
+.qoute{
+    font-family: 'Roboto', sans-serif;
+    text-align:center;
+    font-size: .8em;
+    margin-top: 6em;
+    margin-right: .3em;
+    margin-left: .3em;
+} 
+
+
+
+
+  /*the counter*/
+  .count{
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: .4em;
+    border-radius: 1em 0 0 1em;
+    display: inline-block ;
+    width: 50px;
+    text-align:center;
+  }
+
+  .countLabel{
+    background-color:#e8c152;
+    padding: .4em;
+    border-radius: 0 1em 1em 0;
+    display: inline-block ;
+    width: 100px;
+  }
+
+  ul{
+    list-style-type: none;
+    font-size:1.2em;
+    text-align:center;
+    margin:1em;
+    
+  }
+
+  li{
+      margin:1.5em;
+      height: 40px;
+      line-height: 40px;
+  }
+
+  
+  .credits{
+    font-family: 'Oswald', sans-serif;
+    color: #FFFFFF;
+    padding-top: 7em;
+    padding-bottom: 7em;
+    font-size: .7em;
+    letter-spacing: .8em;
+  }
+
+.qouteText{
+  margin-top: .1em;
+  margin-bottom:.1em;
+}
+
+.footer{
+  background-color: #000000;
+  width: 100%
+}
+  
+
+
+
+
+
+  /*Ken Burns affect******************************/
+  .image-wrap {
+    width: 100%;
+    height:80vh;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    display: block;
+ 
+  }
+  
+  .image-wrap img {
+    width: 100%;
+    animation: move 50s ease;
+    /* Add infinite to loop. */
+    
+    -ms-animation: move 50s ease;
+    -webkit-animation: move 50s ease;
+    -0-animation: move 50s ease;
+    -moz-animation: move 50s ease;
+    position: absolute;
+  }
+  
+  @-webkit-keyframes move {
+    0% {
+      -webkit-transform-origin: top;
+      -moz-transform-origin: top;
+      -ms-transform-origin: top;
+      -o-transform-origin: top;
+      transform-origin: top;
+      transform: scale(1);
+      -ms-transform: scale(1);
+      /* IE 9 */
+      
+      -webkit-transform: scale(1.0);
+      /* Safari and Chrome */
+      
+      -o-transform: scale(1.0);
+      /* Opera */
+      
+      -moz-transform: scale(1.0);
+      /* Firefox */
+    }
+    100% {
+      transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      /* IE 9 */
+      
+      -webkit-transform: scale(1.5);
+      /* Safari and Chrome */
+      
+      -o-transform: scale(1.5);
+      /* Opera */
+      
+      -moz-transform: scale(1.5);
+      /* Firefox */
+    }
+  }
+
+
+  
+
+  @media only screen and (max-width: 400px) {
+    ul{
+      list-style-type: none;
+      font-size:1em;
+      text-align:center;
+      margin:1em;
+      
+    }
+  
+    li{
+        margin:1.5em;
+        height: 40px;
+        line-height: 40px;
+    }
+  }
+
+   /*the counter*/
+   .count{
+    color: #FFFFFF;
+    background-color: #000000;
+    padding: .4em;
+    border-radius: 1.5em 0 0 1.5em;
+    display: inline-block ;
+    width: 40px;
+    text-align:center;
+  }
+
+  .countLabel{
+    background-color:#e8c152;
+    padding: .4em;
+    border-radius: 0 1.5em 1.5em 0;
+    display: inline-block ;
+    width: 75px;
+  }
