@@ -12,26 +12,27 @@
 </head>
 <header>
 
-
-    <div class="image-wrap">
-        <img src="drawing.jpg" alt="B&W drawing of the Sagrada Familia" class="responsive-image">
-    </div>
-    
+    <picture>
+        <source media="(max-width:600px)" srcset="images/portrait2.jpg" alt="B&W drawing of the Sagrada Familia" class="responsive-image-portrait">
+        <source media="(min-width:601px)" srcset="images/landscape_crop4.png" class="responsive-image-lanscape">         
+        <img src="images/portrait.jpg" alt="default image" class="responsive-image-portrait">
+    </picture>
     <h1>The Sagrada Familia Construction Timer</h1>
 </header>
 <body>
     <h2>Today is <span  id="today"></span> and the Sagrada Familia has been 
         under construction for the following time:</h2>
-        <ul>
-            <li><span class="count"id="years">00</span><span class="countLabel">years</span></li>
-            <li><span class="count" id="days">00</span><span class="countLabel">days</span></li>
-            <li><span class="count" id="hours">00</span><span class="countLabel">hours</span></li>
-            <li><span class="count" id="minutes">00</span><span class="countLabel">minutes</span></li>
-            <li><span class="count" id="seconds">00</span><span class="countLabel">seconds</span></li>
+    <div>
+        <ul class="ul-wrap">
+            <li><span class="count one"id="years">00</span><span class="countLabel one">years</span></li>
+            <li><span class="count two" id="days">00</span><span class="countLabel two">days</span></li>
+            <li><span class="count three" id="hours">00</span><span class="countLabel three">hours</span></li>
+            <li><span class="count four" id="minutes">00</span><span class="countLabel four">minutes</span></li>
+            <li><span class="count five" id="seconds">00</span><span class="countLabel five">seconds</span></li>
         </ul>
     </div>
     <div class="qoute"></div>
-        <h2> The groundbreaking took place the morning of March 19, 1882.</h2>
+        <h2 class="groundbreaking"> The groundbreaking took place the morning of March 19, 1882.</h2>
         <h2 class="qouteText">“Eventually you will resume your own true nature. That is to say, your own true nature resumes itself.”</h2>
         <h2 class="qouteText"> ―Shunryu Suzuki</h2>
     </div>
@@ -42,7 +43,3 @@
     </div>
 </footer>
 </html>
-
-
-
-
