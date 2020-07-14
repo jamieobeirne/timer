@@ -8,7 +8,7 @@
 
 window.onload = function(){
  //var today = new Date();
- document.getElementById("today").innerHTML = dayToday + "," + dayOfMonth + monthToday + year;
+ document.getElementById("today").innerHTML = dayToday + dayOfMonth + monthToday + year;
 }
 
 
